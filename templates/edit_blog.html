@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>edit blog</title>
+</head>
+<center><h1>Edit Blog</h1><center>
+<body>
+
+<form method="POST">
+    {% csrf_token %}
+    {{edit_blog.as_p}}
+    <input type="submit" value="Edit">
+</form>
+</body>
+</html>
